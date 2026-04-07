@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="logo-1" viewBox="0 0 140 40">
+    <circle cx="20" cy="20" r="12" fill="none" stroke="#0b0d12" stroke-width="2.5"/>
+    <text x="40" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">NEXARA</text>
+  </symbol>
+  <symbol id="logo-2" viewBox="0 0 140 40">
+    <rect x="8" y="10" width="20" height="20" rx="4" fill="#0b0d12"/>
+    <text x="36" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">PHOENIX</text>
+  </symbol>
+  <symbol id="logo-3" viewBox="0 0 140 40">
+    <path d="M10 30 L20 10 L30 30 Z" fill="#0b0d12"/>
+    <text x="36" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">PRESTIGE</text>
+  </symbol>
+  <symbol id="logo-4" viewBox="0 0 140 40">
+    <circle cx="14" cy="20" r="6" fill="#0b0d12"/>
+    <circle cx="26" cy="20" r="6" fill="none" stroke="#0b0d12" stroke-width="2.5"/>
+    <text x="40" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">LULU</text>
+  </symbol>
+  <symbol id="logo-5" viewBox="0 0 140 40">
+    <rect x="8" y="14" width="6" height="16" fill="#0b0d12"/>
+    <rect x="18" y="10" width="6" height="20" fill="#0b0d12"/>
+    <rect x="28" y="6" width="6" height="24" fill="#0b0d12"/>
+    <text x="42" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">DLF</text>
+  </symbol>
+  <symbol id="logo-6" viewBox="0 0 140 40">
+    <path d="M10 20 Q20 5 30 20 Q20 35 10 20 Z" fill="#0b0d12"/>
+    <text x="36" y="26" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#0b0d12">BRIGADE</text>
+  </symbol>
+</svg>

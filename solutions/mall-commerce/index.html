@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI-Powered Mall Commerce Platform | Multi-Brand Storefronts | Fynd</title>
+  <meta name="description" content="Launch an AI-native digital mall. Unified cart across brands, single checkout, mall-wide loyalty, and AI that compounds revenue across every tenant. Built by Fynd." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Inline SVG sprites (icons + logos) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#E2C3FE"/>
+        <stop offset=".5" stop-color="#927EFF"/>
+        <stop offset="1" stop-color="#086FFD"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-dashboard" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="14" y="16" width="36" height="14" rx="3" fill="#fff"/><rect x="14" y="34" width="16" height="14" rx="3" fill="#fff"/><rect x="34" y="34" width="16" height="14" rx="3" fill="#fff"/></symbol>
+    <symbol id="i-ai" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M22 42l6-20 6 20M24 36h8M40 22v20" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="22" r="2.5" fill="#fff"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="12" y="24" width="22" height="16" rx="2" fill="none" stroke="#fff" stroke-width="3"/><path d="M34 28h10l6 6v6H34z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><circle cx="20" cy="44" r="3" fill="#fff"/><circle cx="42" cy="44" r="3" fill="#fff"/></symbol>
+    <symbol id="i-flywheel" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M44 24a14 14 0 1 0 4 10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M48 18v8h-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-store" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M16 26l4-8h24l4 8v4a4 4 0 0 1-8 0 4 4 0 0 1-8 0 4 4 0 0 1-8 0 4 4 0 0 1-8 0z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M18 30v18h28V30" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M14 18h6l4 22h22l4-16H22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="46" r="3" fill="#fff"/><circle cx="42" cy="46" r="3" fill="#fff"/></symbol>
+    <symbol id="i-reco" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M32 18l3.6 7.4 8.4 1-6 5.8 1.4 8.2L32 36.6 24.6 40.4 26 32.2l-6-5.8 8.4-1z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="i-loyalty" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M32 46c-10-6-16-12-16-20a8 8 0 0 1 16-2 8 8 0 0 1 16 2c0 8-6 14-16 20z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></symbol>
+    <symbol id="i-builder" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="14" y="16" width="36" height="32" rx="3" fill="none" stroke="#fff" stroke-width="3"/><path d="M14 24h36M20 32h12M20 38h18" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-discover" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><circle cx="29" cy="29" r="11" fill="none" stroke="#fff" stroke-width="3"/><path d="M37 37l9 9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-bot" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="16" y="22" width="32" height="22" rx="6" fill="none" stroke="#fff" stroke-width="3"/><circle cx="26" cy="33" r="2.5" fill="#fff"/><circle cx="38" cy="33" r="2.5" fill="#fff"/><path d="M32 16v6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-promo" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M44 16l-22 8-8 4v8l8 4 4 12 4-2-2-8 16 6z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></symbol>
+
+    <symbol id="logo-1" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#0b0d12">nexara</text><circle cx="100" cy="22" r="3.5" fill="#927EFF"/></symbol>
+    <symbol id="logo-2" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#0b0d12">PHOENIX</text></symbol>
+    <symbol id="logo-3" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="2" fill="#0b0d12">PRESTIGE</text></symbol>
+    <symbol id="logo-4" viewBox="0 0 160 40"><text x="0" y="29" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="-1" fill="#0b0d12">lulu.</text></symbol>
+    <symbol id="logo-5" viewBox="0 0 160 40"><text x="0" y="29" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="1" fill="#0b0d12">DLF</text><text x="50" y="27" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#0b0d12">RETAIL</text></symbol>
+    <symbol id="logo-6" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.3" fill="#0b0d12">Brigade</text></symbol>
+  </svg>
+
+  <!-- FOLD 1 — HERO -->
+  <section id="fold-1" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span>AI-Powered Mall Commerce</p>
+        <h1>Your mall, online. Every tenant, one storefront.</h1>
+        <p class="lede">Give your tenants a digital channel they could never build on their own. Customers browse across brands, buy from multiple stores in one cart, earn mall-wide loyalty points, and keep coming back. AI handles the rest.</p>
+        <div class="cta-row">
+          <a href="#cta" class="btn btn-primary">Book a demo</a>
+          <a href="#fold-2" class="btn btn-secondary">Explore features</a>
+        </div>
+        <p class="proof">Powering India's largest retail REIT</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-dashboard.svg" alt="Mall commerce dashboard preview" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 2 — OPERATOR (BENTO) -->
+  <section id="fold-2" class="bento-section">
+    <div class="container">
+      <p class="eyebrow"><span class="dot"></span>For operators</p>
+      <h2>Run the whole mall from one screen</h2>
+      <div class="bento">
+        <article class="bento-card bento-hero">
+          <svg class="card-icon"><use href="#i-dashboard"/></svg>
+          <h3>One dashboard for the entire mall</h3>
+          <p>Orders, traffic, conversion, and basket data across every tenant. Mall level and brand level views. All in real time.</p>
+          <div class="bento-art">
+            <img src="assets/hero-dashboard.svg" alt="Mall dashboard preview" />
+          </div>
+        </article>
+        <article class="bento-card">
+          <svg class="card-icon"><use href="#i-ai"/></svg>
+          <h3>AI that tells you what to do</h3>
+          <p>AI surfaces insights in plain English. What changed, why it matters, and what to do next.</p>
+        </article>
+        <article class="bento-card">
+          <svg class="card-icon"><use href="#i-truck"/></svg>
+          <h3>Unified logistics and returns</h3>
+          <p>One pickup hub for all tenants. Buy online, return in any physical store. Connects to ERP, WMS, POS.</p>
+        </article>
+        <article class="bento-card">
+          <svg class="card-icon"><use href="#i-flywheel"/></svg>
+          <h3>A mall that keeps getting better</h3>
+          <p>AI runs experiments and deploys winners automatically. Revenue compounds across tenants.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 3 — CUSTOMER (ZIGZAG) -->
+  <section id="fold-3" class="zigzag-section">
+    <div class="container">
+      <p class="eyebrow"><span class="dot"></span>For customers</p>
+      <h2>One mall. One seamless shopping experience.</h2>
+      <div class="zigzag">
+        <div class="zig-row">
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-store"/></svg></div>
+          <div class="zig-copy">
+            <h3>One mall, every store inside</h3>
+            <p>Customers browse across every tenant on one domain and shop the way they walk through your building.</p>
+          </div>
+        </div>
+        <div class="zig-row reverse">
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-cart"/></svg></div>
+          <div class="zig-copy">
+            <h3>One cart, one checkout</h3>
+            <p>Buy from multiple tenants in a single transaction. One cart, one invoice, zero friction at brand boundaries.</p>
+          </div>
+        </div>
+        <div class="zig-row">
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-reco"/></svg></div>
+          <div class="zig-copy">
+            <h3>Products they actually want</h3>
+            <p>AI recommends products from other tenants automatically. A shoe buyer sees socks. A skincare buyer sees fragrances.</p>
+          </div>
+        </div>
+        <div class="zig-row reverse">
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-loyalty"/></svg></div>
+          <div class="zig-copy">
+            <h3>Rewards that work everywhere</h3>
+            <p>Earn points at any tenant, redeem at any other. One wallet, one loyalty programme for the entire mall.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 4 — TENANT (LIGHT SPLIT) -->
+  <section id="fold-4" class="split-section">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <div class="container split-grid">
+      <div class="split-copy">
+        <p class="eyebrow"><span class="dot"></span>For tenants</p>
+        <h2>Every tenant goes digital on day one</h2>
+        <p class="lede">A digital channel your tenants could never build on their own — set up in minutes, powered by the mall, improved by AI.</p>
+        <a href="#cta" class="btn btn-primary">Show me how</a>
+      </div>
+      <ol class="big-num-list">
+        <li>
+          <span class="big-num">01</span>
+          <div>
+            <h3>A digital storefront without hiring a developer</h3>
+            <p>Any tenant goes live on your domain. AI builds storefront pages from a plain language description.</p>
+          </div>
+        </li>
+        <li>
+          <span class="big-num">02</span>
+          <div>
+            <h3>Customers they would never reach on their own</h3>
+            <p>Cross-brand discovery and AI recommendations route customers into stores they would not have found.</p>
+          </div>
+        </li>
+        <li>
+          <span class="big-num">03</span>
+          <div>
+            <h3>Products visible to AI assistants</h3>
+            <p>Every tenant's catalogue automatically becomes readable by AI assistants. Free traffic, no ad spend.</p>
+          </div>
+        </li>
+        <li>
+          <span class="big-num">04</span>
+          <div>
+            <h3>Promotions powered by the mall</h3>
+            <p>Mall-wide campaigns and personalised feeds drive footfall to every tenant, not just anchors.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOLD 5 — HOW IT WORKS -->
+  <section id="fold-5" class="cards-section alt">
+    <div class="container">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Set up your mall</h3>
+          <p>Choose your domain, set design guidelines for consistency, and invite tenants to join.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Brand stores go live</h3>
+          <p>You decide how each brand store looks. Set design guidelines, configure layouts, and use AI to build storefront pages from a plain language description.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Customers shop the mall</h3>
+          <p>Browse across tenants, add to one cart, check out once, earn mall-wide points. All on your domain.</p>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <h3>AI takes over</h3>
+          <p>The system learns from every visit. Recommendations get smarter, promotions perform better, and revenue compounds across tenants.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOLD 6 — WHO IS THIS FOR -->
+  <section id="fold-6" class="cards-section">
+    <div class="container">
+      <h2>Who is this for</h2>
+      <div class="card-grid two-up">
+        <article class="card">
+          <h3>Shopping mall operators</h3>
+          <p>You manage a physical mall with 50 or more tenants across one or more properties. You want to take that experience online without asking each tenant to figure out ecommerce on their own. You want the data, the loyalty, and the repeat visits.</p>
+          <p class="muted">Listed REITs, regional mall groups, developers with retail assets</p>
+        </article>
+        <article class="card">
+          <h3>Retail conglomerates</h3>
+          <p>You own multiple brands and want them on one platform. Each brand keeps its own identity. You get one dashboard, shared logistics, and customer data that works across the portfolio.</p>
+          <p class="muted">Multi-brand groups across fashion, beauty, electronics, home, or grocery</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 7 — CTA -->
+  <section id="cta" class="cta-band">
+    <div class="container">
+      <h2>Ready to take your mall online?</h2>
+      <p>See how it works. Book a walkthrough with our team and we will show you exactly how your tenants, your customers, and your data come together.</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-primary">Book a demo</a>
+        <a href="#" class="btn btn-secondary">Explore Storefronts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 8 — FAQ -->
+  <section id="fold-8" class="faqs">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>What is Fynd Mall Commerce?</summary>
+        <p>It is a platform that lets you create one digital storefront for your entire mall. Every tenant gets their own store inside your domain. Customers can search across all tenants, buy from multiple stores in one cart, check out once, and earn loyalty points that work across the mall.</p>
+      </details>
+
+      <details>
+        <summary>How is this different from giving each tenant their own website?</summary>
+        <p>When each tenant runs their own site, there is no unified experience. Customers cannot buy from two stores in one go. There is no shared loyalty. And you as the mall operator have zero visibility into what is happening across brands. Mall Commerce solves all of that while still letting each tenant control their own catalogue, pricing, and content.</p>
+      </details>
+
+      <details>
+        <summary>What AI capabilities are included?</summary>
+        <p>Tenants can build storefront pages by typing a description. AI reads data from every tenant and gives you insights in plain English. Product recommendations work across the entire mall, not just one store. And every tenant's products automatically become visible to AI search engines and assistants without any setup.</p>
+      </details>
+
+      <details>
+        <summary>Do tenants lose control of their stores?</summary>
+        <p>No. Every tenant controls their own catalogue, pricing, promotions, and storefront design. You as the mall operator manage the shared infrastructure: the domain, the unified checkout, the loyalty programme, and the analytics. It works the same way as a physical mall. Tenants control their stores. You control the building.</p>
+      </details>
+
+      <details>
+        <summary>Can customers buy from multiple tenants in one transaction?</summary>
+        <p>Yes. Customers add products from any store in the mall to a single cart and pay once. They get one invoice and one place to view all their orders, returns, and refunds.</p>
+      </details>
+
+      <details>
+        <summary>How does the loyalty programme work?</summary>
+        <p>Customers earn points at any tenant and redeem them at any other tenant in the mall. You set the earn and burn rules, the tiers, and the wallet configuration. The loyalty engine is already used by leading beauty and fashion brands in India.</p>
+      </details>
+
+      <details>
+        <summary>How do we get started?</summary>
+        <p>Book a demo with our team. We will walk you through the platform, talk through your tenant mix, and put together a launch plan for your mall.</p>
+      </details>
+    </div>
+  </section>
+
+</body>
+</html>

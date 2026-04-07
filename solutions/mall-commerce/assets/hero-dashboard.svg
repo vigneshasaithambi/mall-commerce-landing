@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="Mall commerce dashboard preview">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E2C3FE"/>
+      <stop offset=".5" stop-color="#927EFF"/>
+      <stop offset="1" stop-color="#086FFD"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#927EFF"/>
+      <stop offset="1" stop-color="#086FFD"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#0b0d12" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <!-- window frame -->
+  <rect x="20" y="20" width="680" height="420" rx="18" fill="#fff" stroke="#ececf2" filter="url(#shadow)"/>
+  <rect x="20" y="20" width="680" height="44" rx="18" fill="#f7f6fb"/>
+  <rect x="20" y="46" width="680" height="18" fill="#f7f6fb"/>
+  <circle cx="44" cy="42" r="5" fill="#ff6058"/>
+  <circle cx="62" cy="42" r="5" fill="#ffbd2e"/>
+  <circle cx="80" cy="42" r="5" fill="#27c93f"/>
+  <rect x="220" y="32" width="280" height="20" rx="10" fill="#fff" stroke="#ececf2"/>
+
+  <!-- sidebar -->
+  <rect x="20" y="64" width="150" height="376" fill="#fafaff"/>
+  <rect x="40" y="92" width="110" height="10" rx="5" fill="url(#g1)"/>
+  <rect x="40" y="120" width="90" height="8" rx="4" fill="#ececf2"/>
+  <rect x="40" y="142" width="100" height="8" rx="4" fill="#ececf2"/>
+  <rect x="40" y="164" width="80" height="8" rx="4" fill="#ececf2"/>
+  <rect x="40" y="186" width="95" height="8" rx="4" fill="#ececf2"/>
+  <rect x="40" y="208" width="85" height="8" rx="4" fill="#ececf2"/>
+
+  <!-- header strip -->
+  <rect x="190" y="84" width="200" height="14" rx="7" fill="#0b0d12"/>
+  <rect x="190" y="106" width="320" height="8" rx="4" fill="#c9c7d6"/>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="190" y="134" width="155" height="86" rx="12" fill="#fff" stroke="#ececf2"/>
+    <rect x="206" y="150" width="60" height="8" rx="4" fill="#c9c7d6"/>
+    <rect x="206" y="170" width="90" height="20" rx="4" fill="#0b0d12"/>
+    <rect x="206" y="200" width="40" height="8" rx="4" fill="url(#g2)"/>
+  </g>
+  <g>
+    <rect x="358" y="134" width="155" height="86" rx="12" fill="#fff" stroke="#ececf2"/>
+    <rect x="374" y="150" width="60" height="8" rx="4" fill="#c9c7d6"/>
+    <rect x="374" y="170" width="80" height="20" rx="4" fill="#0b0d12"/>
+    <rect x="374" y="200" width="50" height="8" rx="4" fill="url(#g2)"/>
+  </g>
+  <g>
+    <rect x="526" y="134" width="155" height="86" rx="12" fill="url(#g1)"/>
+    <rect x="542" y="150" width="60" height="8" rx="4" fill="rgba(255,255,255,.6)"/>
+    <rect x="542" y="170" width="100" height="20" rx="4" fill="#fff"/>
+    <rect x="542" y="200" width="40" height="8" rx="4" fill="rgba(255,255,255,.7)"/>
+  </g>
+
+  <!-- chart -->
+  <rect x="190" y="234" width="323" height="190" rx="12" fill="#fff" stroke="#ececf2"/>
+  <rect x="206" y="250" width="120" height="10" rx="5" fill="#0b0d12"/>
+  <polyline points="206,400 240,360 274,380 308,330 342,350 376,290 410,310 444,250 478,270 498,240" fill="none" stroke="url(#g2)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="206,410 240,400 274,395 308,380 342,385 376,360 410,370 444,340 478,345 498,330" fill="none" stroke="#c9c7d6" stroke-width="2" stroke-dasharray="3 4"/>
+
+  <!-- tenants list -->
+  <rect x="526" y="234" width="155" height="190" rx="12" fill="#fff" stroke="#ececf2"/>
+  <rect x="542" y="250" width="80" height="10" rx="5" fill="#0b0d12"/>
+  <g>
+    <circle cx="552" cy="284" r="10" fill="url(#g1)"/>
+    <rect x="570" y="278" width="70" height="6" rx="3" fill="#0b0d12"/>
+    <rect x="570" y="290" width="40" height="5" rx="2.5" fill="#c9c7d6"/>
+  </g>
+  <g>
+    <circle cx="552" cy="316" r="10" fill="url(#g1)"/>
+    <rect x="570" y="310" width="80" height="6" rx="3" fill="#0b0d12"/>
+    <rect x="570" y="322" width="50" height="5" rx="2.5" fill="#c9c7d6"/>
+  </g>
+  <g>
+    <circle cx="552" cy="348" r="10" fill="url(#g1)"/>
+    <rect x="570" y="342" width="60" height="6" rx="3" fill="#0b0d12"/>
+    <rect x="570" y="354" width="35" height="5" rx="2.5" fill="#c9c7d6"/>
+  </g>
+  <g>
+    <circle cx="552" cy="380" r="10" fill="url(#g1)"/>
+    <rect x="570" y="374" width="75" height="6" rx="3" fill="#0b0d12"/>
+    <rect x="570" y="386" width="45" height="5" rx="2.5" fill="#c9c7d6"/>
+  </g>
+</svg>
