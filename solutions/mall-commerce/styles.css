@@ -52,7 +52,7 @@ img { max-width: 100%; display: block; }
 }
 
 section {
-  padding: 120px 0;
+  padding: 96px 0;
   background: #fff;
   position: relative;
   overflow: hidden;
@@ -359,46 +359,60 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .zig-copy p { color: var(--ink-2); margin: 0; font-size: 16.5px; max-width: 60ch; }
 .zig-row.reverse .zig-copy p { margin-left: auto; }
 
-/* ===== Fold 4 — Light split with big numerals ===== */
-.split-section { position: relative; }
-.split-section .container { z-index: 1; }
-.split-grid {
+/* ===== Fold 4 — Tenant: header + numbered grid ===== */
+.tenant-section { position: relative; }
+.tenant-section .container { z-index: 1; }
+.tenant-head {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 56px;
 }
-.split-copy { position: sticky; top: 80px; }
-.split-copy .lede {
+.tenant-head h2 { margin-bottom: 0; max-width: 14ch; }
+.tenant-head-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.tenant-head-aside .lede {
   font-size: 18px;
   color: var(--ink-2);
-  margin: 0 0 28px;
+  margin: 0;
+  max-width: 44ch;
 }
-.big-num-list {
+.big-num-grid {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.big-num-grid li {
+  background: #fff;
+  border-radius: var(--radius-card);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 }
-.big-num-list li {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 24px;
-  padding: 36px 0;
-  border-top: 1px solid var(--line);
-  align-items: start;
+.big-num-grid li:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
 }
-.big-num-list li:last-child { border-bottom: 1px solid var(--line); }
 .big-num {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
   color: var(--ink);
+  margin-bottom: 20px;
 }
-.big-num-list h3 { font-size: 22px; margin: 6px 0 8px; }
-.big-num-list p { color: var(--ink-2); margin: 0; font-size: 15.5px; }
+.big-num-grid h3 { font-size: 20px; margin: 0 0 10px; }
+.big-num-grid p { color: var(--ink-2); margin: 0; font-size: 15px; }
 
 /* ===== How it works (Fold 5) — keep clean steps ===== */
 .cards-section { position: relative; }
@@ -517,6 +531,9 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .faqs p { color: var(--ink-2); margin: 0; max-width: 80ch; }
 
 /* ===== Responsive ===== */
+@media (max-width: 1100px) {
+  .big-num-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 960px) {
   section { padding: 80px 0; }
   .hero { padding: 88px 0 64px; }
@@ -535,9 +552,8 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
   .zig-row.reverse .zig-copy { order: 0; text-align: left; }
   .zig-row.reverse .zig-copy p { margin-left: 0; }
   .zig-art { height: 150px; }
-  .split-grid { grid-template-columns: 1fr; gap: 40px; }
-  .split-copy { position: static; }
-  .big-num-list li { grid-template-columns: 80px 1fr; gap: 20px; padding: 28px 0; }
+  .tenant-head { grid-template-columns: 1fr; gap: 24px; align-items: start; margin-bottom: 40px; }
+  .big-num-grid { grid-template-columns: 1fr; }
   .big-num { font-size: 48px; }
   .steps, .cards-section .card-grid { grid-template-columns: 1fr; }
   .container { padding: 0 22px; }
