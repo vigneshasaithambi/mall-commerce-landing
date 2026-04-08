@@ -308,6 +308,7 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
   align-items: center;
   padding: 48px;
 }
+.bento-card.wide { grid-column: span 2; }
 .bento-hero h3 { font-size: 30px; letter-spacing: -0.02em; line-height: 1.15; }
 .bento-hero p { font-size: 17px; }
 .bento-art {
@@ -325,7 +326,7 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .zigzag {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 .zig-row {
   display: grid;
@@ -522,6 +523,7 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
   .hero-grid { grid-template-columns: 1fr; gap: 44px; }
   .bento { grid-template-columns: 1fr; }
   .bento-hero { grid-column: span 1; grid-template-columns: 1fr; padding: 32px; }
+  .bento-card.wide { grid-column: span 1; }
   .bento-hero h3 { font-size: 24px; }
   .zig-row, .zig-row.reverse {
     grid-template-columns: 1fr;
