@@ -521,110 +521,116 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .cta-band .cta-row { justify-content: center; }
 .cta-band .btn-secondary { border-color: var(--line); }
 
-/* ===== Contact form section ===== */
+/* ===== Contact form section (Fynd exact) ===== */
 .form-section {
-  background: var(--bg);
-  border-top: 1px solid var(--line);
+  background: #fff;
+  padding: 64px 0;
 }
 .form-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 0;
   align-items: stretch;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px -20px rgba(11, 13, 18, 0.16);
 }
+
+/* Left: image + white card overlay */
 .form-left {
   position: relative;
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  min-height: 480px;
+  min-height: 560px;
 }
-.form-bg-pattern {
+.form-bg-image {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(600px 400px at 20% 80%, rgba(146,126,255,0.35), transparent 60%),
-    radial-gradient(500px 300px at 90% 10%, rgba(8,111,253,0.25), transparent 60%),
-    linear-gradient(135deg, #12102a 0%, #0a0a14 100%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 0;
 }
-.form-bg-pattern::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.06;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><circle cx='30' cy='30' r='1.5' fill='white'/></svg>");
-  background-size: 40px 40px;
-}
-.form-info-card {
+.form-card {
   position: relative;
   z-index: 1;
-  color: #fff;
-  padding: 40px 36px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px;
+  margin: 32px;
+  max-width: 380px;
+}
+.form-card-heading {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 28px;
+}
+.form-steppers {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  gap: 20px;
 }
-.form-info-card h2 {
-  color: #fff;
-  font-size: clamp(24px, 2.6vw, 34px);
-  margin-bottom: 36px;
-  max-width: 16ch;
-}
-.form-steps {
+.stepper {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.form-step {
-  display: flex;
-  gap: 16px;
+  gap: 14px;
   align-items: flex-start;
 }
-.form-step-num {
-  width: 32px;
-  height: 32px;
-  min-width: 32px;
+.step-count {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
+  background: var(--ink);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 14px;
-  color: #fff;
+  font-size: 13px;
+  margin-top: 2px;
 }
-.form-step-title {
+.stepper-title {
   font-weight: 600;
   font-size: 15px;
-  color: #fff;
-  margin: 0 0 4px;
+  color: var(--ink);
+  margin: 0 0 2px;
 }
-.form-step-sub {
-  font-size: 13.5px;
-  color: rgba(255,255,255,0.6);
+.stepper-sub {
+  font-size: 13px;
+  color: var(--ink-3);
   margin: 0;
+  line-height: 1.4;
 }
+
+/* Right: form */
 .form-right {
   background: #fff;
-  border-radius: var(--radius-card);
-  padding: 36px;
-  box-shadow: var(--shadow-card);
+  padding: 36px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .form-heading {
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 700;
   margin: 0 0 24px;
+  letter-spacing: -0.02em;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+}
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 14px;
 }
 .form-field {
   display: flex;
@@ -633,20 +639,20 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 }
 .form-field label {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ink);
 }
 .form-field input,
 .form-field textarea,
 .form-field select {
   font-family: inherit;
-  font-size: 15px;
-  padding: 12px 14px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid #dde0e6;
+  border-radius: 8px;
   background: #fff;
   color: var(--ink);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   outline: none;
   resize: vertical;
   -webkit-appearance: none;
@@ -655,15 +661,15 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .form-field select {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8'><path d='M1 1l5 5 5-5' fill='none' stroke='%236b6f7a' stroke-width='1.5' stroke-linecap='round'/></svg>");
   background-repeat: no-repeat;
-  background-position: right 14px center;
-  padding-right: 36px;
+  background-position: right 12px center;
+  padding-right: 32px;
   cursor: pointer;
 }
 .form-field input:focus,
 .form-field textarea:focus,
 .form-field select:focus {
   border-color: #927EFF;
-  box-shadow: 0 0 0 3px rgba(146,126,255,0.12);
+  box-shadow: 0 0 0 3px rgba(146,126,255,0.10);
 }
 .form-field input::placeholder,
 .form-field textarea::placeholder {
@@ -676,15 +682,19 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .form-submit {
   width: 100%;
   justify-content: center;
-  margin-top: 4px;
-  padding: 14px 24px;
+  margin-top: 8px;
+  padding: 12px 24px;
 }
 .form-consent {
   font-size: 12px;
   color: var(--ink-3);
   text-align: center;
-  margin: 4px 0 0;
+  margin: 6px 0 0;
   line-height: 1.4;
+}
+.form-consent a {
+  color: var(--ink-2);
+  text-decoration: underline;
 }
 
 /* ===== FAQ ===== */
@@ -744,10 +754,11 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
   .big-num-grid { grid-template-columns: 1fr; }
   .big-num { font-size: 48px; }
   .card-grid-3x2 { grid-template-columns: 1fr; }
-  .form-layout { grid-template-columns: 1fr; }
+  .form-layout { grid-template-columns: 1fr; border-radius: 16px; }
+  .form-left { min-height: 360px; }
+  .form-card { margin: 20px; max-width: none; }
   .form-row { grid-template-columns: 1fr; }
-  .form-right { padding: 28px; }
-  .form-info-card { padding: 32px 28px; }
+  .form-right { padding: 28px 24px; }
   .steps, .cards-section .card-grid { grid-template-columns: 1fr; }
   .container { padding: 0 22px; }
 }

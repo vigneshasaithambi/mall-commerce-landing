@@ -312,73 +312,76 @@
     </div>
   </section>
 
-  <!-- FOLD 8 — CONTACT FORM -->
+  <!-- FOLD 8 — CONTACT FORM (exact Fynd recreation) -->
   <section id="cta" class="form-section">
     <div class="container form-layout">
       <div class="form-left">
-        <div class="form-bg-pattern"></div>
-        <div class="form-info-card">
-          <h2>Built for businesses like yours. Let's connect</h2>
-          <div class="form-steps">
-            <div class="form-step">
-              <span class="form-step-num">1</span>
-              <div>
-                <p class="form-step-title">Fill out the form</p>
-                <p class="form-step-sub">Share your contact information to get started</p>
+        <img src="https://cdn.prod.website-files.com/67a9c8e5f2c74ac8c2c9b88b/68f08c4b320e2bb4cccf6656_Image-Variant.avif" alt="" class="form-bg-image" />
+        <div class="form-card">
+          <h2 class="form-card-heading">Built for businesses like yours. Let's connect</h2>
+          <div class="form-steppers">
+            <div class="stepper">
+              <div class="step-count">1</div>
+              <div class="stepper-text">
+                <div class="stepper-title">Fill out the form</div>
+                <div class="stepper-sub">Share your contact information to get started</div>
               </div>
             </div>
-            <div class="form-step">
-              <span class="form-step-num">2</span>
-              <div>
-                <p class="form-step-title">Speak to an expert</p>
-                <p class="form-step-sub">A member of our sales team will get in touch with you</p>
+            <div class="stepper">
+              <div class="step-count">2</div>
+              <div class="stepper-text">
+                <div class="stepper-title">Speak to an expert</div>
+                <div class="stepper-sub">A member of our sales team will get in touch with you</div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="form-right">
-        <h3 class="form-heading">Get in touch</h3>
+        <h2 class="form-heading">Get in touch</h2>
         <form class="contact-form" onsubmit="return false;">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="first-name">First name</label>
-              <input type="text" id="first-name" name="first-name" placeholder="First name" required />
+          <div class="form-fields">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="First-Name" placeholder="First name" required />
+              </div>
+              <div class="form-field">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="Last-Name" placeholder="Last name" required />
+              </div>
             </div>
             <div class="form-field">
-              <label for="last-name">Last name</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Last name" required />
+              <label for="work-email">Work email</label>
+              <input type="email" id="work-email" name="Work-Email" placeholder="name@company.com" required />
             </div>
-          </div>
-          <div class="form-field">
-            <label for="work-email">Work email</label>
-            <input type="email" id="work-email" name="work-email" placeholder="name@company.com" required />
-          </div>
-          <div class="form-field">
-            <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91" />
-          </div>
-          <div class="form-field">
-            <label for="company">Company name</label>
-            <input type="text" id="company" name="company" placeholder="Your mall or company" required />
-          </div>
-          <div class="form-field">
-            <label for="product">Product interested</label>
-            <select id="product" name="product">
-              <option value="" disabled selected>Select one...</option>
-              <option value="mall-commerce">Mall Commerce</option>
-              <option value="storefront">Storefront</option>
-              <option value="supply-chain">Supply chain solutions</option>
-              <option value="retail-store">Retail store solutions</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label for="message">Tell us about your business or query <span class="optional">(optional)</span></label>
-            <textarea id="message" name="message" rows="3" placeholder="Number of tenants, cities, what you're looking for..."></textarea>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="Phone-Number" placeholder="+91" />
+            </div>
+            <div class="form-field">
+              <label for="company">Company name</label>
+              <input type="text" id="company" name="Company-Name" placeholder="Company name" required />
+            </div>
+            <div class="form-field">
+              <label for="product">Product interested</label>
+              <select id="product" name="Product-Interested">
+                <option value="" disabled selected>Select one...</option>
+                <option value="building-website">Building a website</option>
+                <option value="supply-chain">Supply chain solutions</option>
+                <option value="retail-store">Retail store solutions</option>
+                <option value="sell-marketplaces">Sell on Marketplaces</option>
+                <option value="ai-solutions">AI solutions</option>
+                <option value="fashion-manufacturing">Fashion manufacturing solution</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="message">Tell us about your business or query <span class="optional">(optional)</span></label>
+              <textarea id="message" name="Message" rows="3" placeholder=""></textarea>
+            </div>
           </div>
           <button type="submit" class="btn btn-primary form-submit">Submit</button>
-          <p class="form-consent">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
+          <p class="form-consent">By submitting, you agree to our <a href="/terms-and-conditions">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.</p>
         </form>
       </div>
     </div>
