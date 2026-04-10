@@ -118,6 +118,13 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 .header-cta {
   padding: 10px 22px;
   font-size: 13px;
+  background: #0a0a14;
+  box-shadow: none;
+  animation: none;
+}
+.header-cta:hover {
+  background: #1a1a2e;
+  box-shadow: none;
 }
 
 /* ===== Eyebrow — plain dark gray, no gradient ===== */
