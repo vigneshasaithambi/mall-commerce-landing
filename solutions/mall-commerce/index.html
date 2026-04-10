@@ -312,14 +312,61 @@
     </div>
   </section>
 
-  <!-- FOLD 8 — CTA -->
-  <section id="cta" class="cta-band">
-    <div class="container">
-      <h2>Ready to take your mall online?</h2>
-      <p>See how it works. Book a walkthrough with our team and we will show you exactly how your tenants, your customers, and your data come together.</p>
-      <div class="cta-row">
-        <a href="#" class="btn btn-primary">Book a demo</a>
-        <a href="#" class="btn btn-secondary">Explore Storefronts</a>
+  <!-- FOLD 8 — CONTACT FORM -->
+  <section id="cta" class="form-section">
+    <div class="container form-layout">
+      <div class="form-left">
+        <div class="form-info-card">
+          <h2>Built for malls like yours. Let's connect.</h2>
+          <div class="form-steps">
+            <div class="form-step">
+              <span class="form-step-num">1</span>
+              <div>
+                <p class="form-step-title">Fill out the form</p>
+                <p class="form-step-sub">Share your contact information to get started</p>
+              </div>
+            </div>
+            <div class="form-step">
+              <span class="form-step-num">2</span>
+              <div>
+                <p class="form-step-title">Speak to an expert</p>
+                <p class="form-step-sub">A member of our team will get in touch with you</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-right">
+        <h3 class="form-heading">Get in touch</h3>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First name" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="work-email">Work email</label>
+            <input type="email" id="work-email" name="work-email" placeholder="name@company.com" required />
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91" />
+          </div>
+          <div class="form-field">
+            <label for="company">Company name</label>
+            <input type="text" id="company" name="company" placeholder="Your mall or company" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Tell us about your mall</label>
+            <textarea id="message" name="message" rows="3" placeholder="Number of tenants, cities, what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Book a demo</button>
+        </form>
       </div>
     </div>
   </section>
