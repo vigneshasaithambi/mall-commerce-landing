@@ -318,7 +318,28 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 }
 .bento-art img { width: 100%; display: block; }
 
-/* ===== Fold 3 — Zigzag ===== */
+/* ===== Section subheading ===== */
+.section-sub {
+  font-size: 19px;
+  color: var(--ink-2);
+  margin: -36px 0 48px;
+  max-width: 60ch;
+}
+
+/* ===== Fold 3 — Grid section (3×2 card grid) ===== */
+.grid-section { position: relative; }
+.grid-section .container { z-index: 1; }
+.card-grid-3x2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.card-grid-3x2 .card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Fold 4 — Zigzag ===== */
 .zigzag-section { position: relative; }
 .zigzag-section .container { z-index: 1; }
 .zigzag-section::after { display: none; }
@@ -533,6 +554,7 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
 /* ===== Responsive ===== */
 @media (max-width: 1100px) {
   .big-num-grid { grid-template-columns: repeat(2, 1fr); }
+  .card-grid-3x2 { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 960px) {
   section { padding: 80px 0; }
@@ -555,6 +577,7 @@ p  { margin: 0 0 12px; color: var(--ink-2); }
   .tenant-head { grid-template-columns: 1fr; gap: 24px; align-items: start; margin-bottom: 40px; }
   .big-num-grid { grid-template-columns: 1fr; }
   .big-num { font-size: 48px; }
+  .card-grid-3x2 { grid-template-columns: 1fr; }
   .steps, .cards-section .card-grid { grid-template-columns: 1fr; }
   .container { padding: 0 22px; }
 }

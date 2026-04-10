@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- Inline SVG sprites (icons + logos) -->
+  <!-- Inline SVG sprites -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">
@@ -21,6 +21,7 @@
         <stop offset="1" stop-color="#086FFD"/>
       </linearGradient>
     </defs>
+    <!-- existing icons -->
     <symbol id="i-dashboard" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="14" y="16" width="36" height="14" rx="3" fill="#fff"/><rect x="14" y="34" width="16" height="14" rx="3" fill="#fff"/><rect x="34" y="34" width="16" height="14" rx="3" fill="#fff"/></symbol>
     <symbol id="i-ai" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M22 42l6-20 6 20M24 36h8M40 22v20" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="40" cy="22" r="2.5" fill="#fff"/></symbol>
     <symbol id="i-truck" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="12" y="24" width="22" height="16" rx="2" fill="none" stroke="#fff" stroke-width="3"/><path d="M34 28h10l6 6v6H34z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><circle cx="20" cy="44" r="3" fill="#fff"/><circle cx="42" cy="44" r="3" fill="#fff"/></symbol>
@@ -35,13 +36,14 @@
     <symbol id="i-promo" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M44 16l-22 8-8 4v8l8 4 4 12 4-2-2-8 16 6z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></symbol>
     <symbol id="i-home-box" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M14 32l18-14 18 14v16a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><rect x="26" y="36" width="12" height="12" rx="1" fill="#fff"/></symbol>
     <symbol id="i-pickup" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M20 24h24l-2 24H22z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M26 24v-4a6 6 0 0 1 12 0v4" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
-
-    <symbol id="logo-1" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#0b0d12">nexara</text><circle cx="100" cy="22" r="3.5" fill="#927EFF"/></symbol>
-    <symbol id="logo-2" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="-0.8" fill="#0b0d12">PHOENIX</text></symbol>
-    <symbol id="logo-3" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="600" letter-spacing="2" fill="#0b0d12">PRESTIGE</text></symbol>
-    <symbol id="logo-4" viewBox="0 0 160 40"><text x="0" y="29" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="-1" fill="#0b0d12">lulu.</text></symbol>
-    <symbol id="logo-5" viewBox="0 0 160 40"><text x="0" y="29" font-family="Inter,Arial,sans-serif" font-size="26" font-weight="800" letter-spacing="1" fill="#0b0d12">DLF</text><text x="50" y="27" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#0b0d12">RETAIL</text></symbol>
-    <symbol id="logo-6" viewBox="0 0 160 40"><text x="0" y="27" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.3" fill="#0b0d12">Brigade</text></symbol>
+    <!-- new icons for v3 -->
+    <symbol id="i-connect" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><circle cx="22" cy="32" r="6" fill="none" stroke="#fff" stroke-width="3"/><circle cx="42" cy="32" r="6" fill="none" stroke="#fff" stroke-width="3"/><path d="M28 32h8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
+    <symbol id="i-coupon" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="12" y="20" width="40" height="24" rx="4" fill="none" stroke="#fff" stroke-width="3"/><path d="M24 20v24" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 3"/><circle cx="36" cy="29" r="2" fill="#fff"/><circle cx="36" cy="35" r="2" fill="#fff"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M16 24h32v4a4 4 0 0 0 0 8v4H16v-4a4 4 0 0 1 0-8z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/><path d="M26 24v16" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 3"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><rect x="14" y="20" width="36" height="28" rx="4" fill="none" stroke="#fff" stroke-width="3"/><path d="M14 30h36" fill="none" stroke="#fff" stroke-width="3"/><path d="M24 16v8M40 16v8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="22" y="36" width="6" height="6" rx="1" fill="#fff"/></symbol>
+    <symbol id="i-parking" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><circle cx="32" cy="32" r="16" fill="none" stroke="#fff" stroke-width="3"/><text x="24" y="40" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" fill="#fff">P</text></symbol>
+    <symbol id="i-scan" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M18 16h8M16 18v8M48 16h-8M48 18v8M18 48h8M16 48v-8M48 48h-8M48 48v-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><rect x="24" y="24" width="16" height="16" rx="2" fill="#fff"/></symbol>
+    <symbol id="i-food" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="url(#ig)"/><path d="M20 18v28M20 30c0-8 8-8 8-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M36 18v6a6 6 0 0 0 12 0v-6M42 24v22" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/></symbol>
   </svg>
 
   <!-- FOLD 1 — HERO -->
@@ -50,7 +52,7 @@
       <div class="hero-copy">
         <p class="eyebrow"><span class="dot"></span>AI-Powered Mall Commerce</p>
         <h1>Your mall, online. Every tenant, one storefront.</h1>
-        <p class="lede">Give your tenants a digital channel they could never build on their own. Customers browse across brands, buy from multiple stores in one cart, earn mall-wide loyalty points, and keep coming back. AI handles the rest.</p>
+        <p class="lede">Give your tenants a digital channel they could never build on their own. Customers shop online and show up at the mall. Customers visit the mall and keep buying from home. One platform, one loop, more footfall, more revenue.</p>
         <div class="cta-row">
           <a href="#cta" class="btn btn-primary">Book a demo</a>
           <a href="#fold-2" class="btn btn-secondary">Explore features</a>
@@ -83,83 +85,125 @@
           <p>AI surfaces insights in plain English. What changed, why it matters, and what to do next.</p>
         </article>
         <article class="bento-card">
-          <svg class="card-icon"><use href="#i-truck"/></svg>
-          <h3>Same-day delivery and in-store pickup</h3>
-          <p>Customers shop from home and receive products from the mall the same day. Or buy online and pick up in store at their convenience.</p>
-        </article>
-        <article class="bento-card">
-          <svg class="card-icon"><use href="#i-flywheel"/></svg>
-          <h3>Unified returns across tenants</h3>
-          <p>One pickup hub for all tenants. Buy from any store online, return at any physical counter. Connects to existing ERP, WMS, and POS.</p>
-        </article>
-        <article class="bento-card wide">
-          <svg class="card-icon"><use href="#i-promo"/></svg>
-          <h3>Run promotions across the entire mall</h3>
-          <p>Trending lists, seasonal campaigns, and personalised feeds for every tenant. Managed from one place, not store by store.</p>
-        </article>
-        <article class="bento-card">
           <svg class="card-icon"><use href="#i-loyalty"/></svg>
           <h3>One profile per shopper</h3>
           <p>Unified customer view across every tenant. Basket affinity, visit frequency, and brand crossover in one place.</p>
+        </article>
+        <article class="bento-card">
+          <svg class="card-icon"><use href="#i-promo"/></svg>
+          <h3>Run offers and promotions across the mall</h3>
+          <p>Trending lists, seasonal campaigns, and personalised feeds for every tenant. Managed from one place, not store by store.</p>
+        </article>
+        <article class="bento-card wide">
+          <svg class="card-icon"><use href="#i-builder"/></svg>
+          <h3>Onboard tenants in hours, not days</h3>
+          <p>Bring new tenants online fast. AI builds their storefront. Shared checkout, loyalty, and logistics are ready from day one.</p>
+        </article>
+        <article class="bento-card">
+          <svg class="card-icon"><use href="#i-connect"/></svg>
+          <h3>Connects to your existing systems</h3>
+          <p>Works with the ERP, WMS, and POS systems your tenants already use. Real time stock visibility. No rip and replace.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- FOLD 3 — CUSTOMER (ZIGZAG) -->
-  <section id="fold-3" class="zigzag-section">
+  <!-- FOLD 3 — ONLINE FILLS THE MALL (3×2 GRID) -->
+  <section id="fold-3" class="grid-section">
     <div class="container">
-      <p class="eyebrow"><span class="dot"></span>For customers</p>
-      <h2>One mall. One seamless shopping experience.</h2>
+      <p class="eyebrow"><span class="dot"></span>Online → Offline</p>
+      <h2>Online fills the mall</h2>
+      <p class="section-sub">Every online action is designed to bring a customer through the door.</p>
+      <div class="card-grid-3x2">
+        <article class="card">
+          <svg class="card-icon"><use href="#i-pickup"/></svg>
+          <h3>Buy online, pick up at the mall</h3>
+          <p>Customers order from home and collect from the mall. Every pickup is a footfall. Every footfall passes other stores.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon"><use href="#i-flywheel"/></svg>
+          <h3>Buy online, return at any store</h3>
+          <p>Returns happen in the physical mall, not through a courier. Every return is a visit. Every visit is a chance to buy again.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon"><use href="#i-coupon"/></svg>
+          <h3>Digital coupons redeemable in mall</h3>
+          <p>Online purchases generate coupons that can only be redeemed at a physical store. Converts online shoppers into foot traffic.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon"><use href="#i-ticket"/></svg>
+          <h3>Loyalty points for movies and events</h3>
+          <p>Points earned from shopping can be redeemed for movies, spa, gaming, and events in the mall. Turns shoppers into visitors.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon"><use href="#i-calendar"/></svg>
+          <h3>Book movies, events, and experiences</h3>
+          <p>Movies, spa appointments, gaming zones, and events bookable through the digital mall. Every booking is a confirmed visit.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon"><use href="#i-parking"/></svg>
+          <h3>Reserve parking before you arrive</h3>
+          <p>Book a parking slot and pay online. The biggest friction point of visiting a mall, removed before the customer leaves home.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOLD 4 — THE MALL FILLS THE CART (ZIGZAG) -->
+  <section id="fold-4" class="zigzag-section">
+    <div class="container">
+      <p class="eyebrow"><span class="dot"></span>Offline → Online</p>
+      <h2>The mall fills the cart</h2>
+      <p class="section-sub">Every visit to the physical mall turns into online revenue that lasts long after they leave.</p>
       <div class="zigzag">
         <div class="zig-row">
-          <div class="zig-art"><svg class="zig-icon"><use href="#i-store"/></svg></div>
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-truck"/></svg></div>
           <div class="zig-copy">
-            <h3>One mall, every store inside</h3>
-            <p>Browse across every tenant on one domain. Search, shop the look, watch product videos, and discover what is trending in the mall right now.</p>
+            <h3>Same-day delivery from the mall</h3>
+            <p>Customer visits once, then shops the same stores from home. Products delivered from the mall to their door the same day.</p>
           </div>
         </div>
         <div class="zig-row reverse">
-          <div class="zig-art"><svg class="zig-icon"><use href="#i-cart"/></svg></div>
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-scan"/></svg></div>
           <div class="zig-copy">
-            <h3>One cart, fast checkout</h3>
-            <p>Buy from multiple tenants in a single transaction. One cart, one invoice, no queues, no waiting.</p>
+            <h3>Scan in store, buy online</h3>
+            <p>Product not on the shelf? Scan it, browse the full catalogue via endless aisle, and buy online for home delivery.</p>
           </div>
         </div>
         <div class="zig-row">
           <div class="zig-art"><svg class="zig-icon"><use href="#i-discover"/></svg></div>
           <div class="zig-copy">
-            <h3>AI search that understands what you want</h3>
-            <p>Search across every tenant at once. AI personalises results based on what you like, not just what you typed.</p>
+            <h3>AI search and discovery from anywhere</h3>
+            <p>Search across every tenant at once. AI personalises results. Shop the look, watch product videos, see what is trending in the mall.</p>
           </div>
         </div>
         <div class="zig-row reverse">
-          <div class="zig-art"><svg class="zig-icon"><use href="#i-home-box"/></svg></div>
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-cart"/></svg></div>
           <div class="zig-copy">
-            <h3>Shop from home, delivered same day</h3>
-            <p>Browse the mall from home and get products delivered from the mall to your door the same day.</p>
+            <h3>One cart across every tenant</h3>
+            <p>Saw something in three stores? Add them all to one cart from home. One checkout, one invoice, no friction.</p>
           </div>
         </div>
         <div class="zig-row">
-          <div class="zig-art"><svg class="zig-icon"><use href="#i-pickup"/></svg></div>
+          <div class="zig-art"><svg class="zig-icon"><use href="#i-food"/></svg></div>
           <div class="zig-copy">
-            <h3>Buy online, pick up in store</h3>
-            <p>Order online and collect from the mall at your convenience. No shipping wait, no delivery charges.</p>
+            <h3>Food court pre-ordering</h3>
+            <p>Order food online before arriving or while shopping. Skip the queue. F&amp;B tenants get digital orders without building their own app.</p>
           </div>
         </div>
         <div class="zig-row reverse">
           <div class="zig-art"><svg class="zig-icon"><use href="#i-loyalty"/></svg></div>
           <div class="zig-copy">
-            <h3>Rewards that work everywhere</h3>
-            <p>Earn points at any tenant, redeem at any other. One wallet, one loyalty programme for the entire mall.</p>
+            <h3>Rewards that keep them coming back</h3>
+            <p>One loyalty programme across every tenant and every channel. Points earned in the mall work online. Points earned online work in the mall.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOLD 4 — TENANT (HEADER + NUMBERED GRID) -->
-  <section id="fold-4" class="tenant-section">
+  <!-- FOLD 5 — TENANT (HEADER + NUMBERED GRID) -->
+  <section id="fold-5" class="tenant-section">
     <span class="orb orb-a"></span>
     <span class="orb orb-b"></span>
     <div class="container">
@@ -220,8 +264,8 @@
     </div>
   </section>
 
-  <!-- FOLD 5 — HOW IT WORKS -->
-  <section id="fold-5" class="cards-section alt">
+  <!-- FOLD 6 — HOW IT WORKS -->
+  <section id="fold-6" class="cards-section">
     <div class="container">
       <h2>How it works</h2>
       <ol class="steps">
@@ -237,8 +281,8 @@
         </li>
         <li>
           <span class="step-num">3</span>
-          <h3>Customers shop the mall</h3>
-          <p>Browse across tenants, add to one cart, check out once, earn mall-wide points. All on your domain.</p>
+          <h3>Customers shop online and show up</h3>
+          <p>They buy online and pick up at the mall. They redeem coupons in store. They book movies and reserve parking. Online drives footfall. Footfall drives online.</p>
         </li>
         <li>
           <span class="step-num">4</span>
@@ -249,14 +293,14 @@
     </div>
   </section>
 
-  <!-- FOLD 6 — WHO IS THIS FOR -->
-  <section id="fold-6" class="cards-section">
+  <!-- FOLD 7 — WHO IS THIS FOR -->
+  <section id="fold-7" class="cards-section">
     <div class="container">
       <h2>Who is this for</h2>
       <div class="card-grid two-up">
         <article class="card">
           <h3>Shopping mall operators</h3>
-          <p>You manage a physical mall with 50 or more tenants across one or more properties. You want to take that experience online without asking each tenant to figure out ecommerce on their own. You want the data, the loyalty, and the repeat visits.</p>
+          <p>You manage a physical mall with 50 or more tenants across one or more properties. You want to connect the online and offline experience so every digital action drives footfall and every visit drives online revenue.</p>
           <p class="muted">Listed REITs, regional mall groups, developers with retail assets</p>
         </article>
         <article class="card">
@@ -268,7 +312,7 @@
     </div>
   </section>
 
-  <!-- FOLD 7 — CTA -->
+  <!-- FOLD 8 — CTA -->
   <section id="cta" class="cta-band">
     <div class="container">
       <h2>Ready to take your mall online?</h2>
@@ -280,14 +324,14 @@
     </div>
   </section>
 
-  <!-- FOLD 8 — FAQ -->
-  <section id="fold-8" class="faqs">
+  <!-- FOLD 9 — FAQ -->
+  <section id="fold-9" class="faqs">
     <div class="container">
       <h2>Frequently asked questions</h2>
 
       <details>
         <summary>What is Fynd Mall Commerce?</summary>
-        <p>It is a platform that lets you create one digital storefront for your entire mall. Every tenant gets their own store inside your domain. Customers can search across all tenants, buy from multiple stores in one cart, check out once, and earn loyalty points that work across the mall.</p>
+        <p>It is an omnichannel commerce platform for shopping malls. Every tenant gets a storefront on your domain. Customers shop online and pick up at the mall, or visit the mall and keep buying from home. One cart across every tenant, mall-wide loyalty, same-day delivery, and AI that connects the online and offline experience into one loop.</p>
       </details>
 
       <details>
@@ -312,12 +356,17 @@
 
       <details>
         <summary>How does the loyalty programme work?</summary>
-        <p>Customers earn points at any tenant and redeem them at any other tenant in the mall. You set the earn and burn rules, the tiers, and the wallet configuration. The loyalty engine is already used by leading beauty and fashion brands in India.</p>
+        <p>Customers earn points at any tenant and redeem them at any other tenant in the mall. Points also work for movies, spa, gaming, and events. You set the earn and burn rules, the tiers, and the wallet configuration. The loyalty engine is already used by leading beauty and fashion brands in India.</p>
       </details>
 
       <details>
         <summary>Can customers get same-day delivery?</summary>
         <p>Yes. Customers can shop from home and receive products from the mall the same day. They can also buy online and pick up in store at their convenience. The delivery infrastructure is shared across all tenants, so even the smallest store in the mall gets the same delivery speed as the biggest.</p>
+      </details>
+
+      <details>
+        <summary>How does the digital mall drive footfall to the physical mall?</summary>
+        <p>Every online action is designed to bring customers through the door. They buy online and pick up at the mall. They earn coupons online that can only be redeemed in store. They use loyalty points for movies, spa, and events. They book parking before arriving. The digital mall does not replace the physical mall. It fills it.</p>
       </details>
 
       <details>
