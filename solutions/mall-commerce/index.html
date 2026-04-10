@@ -316,8 +316,9 @@
   <section id="cta" class="form-section">
     <div class="container form-layout">
       <div class="form-left">
+        <div class="form-bg-pattern"></div>
         <div class="form-info-card">
-          <h2>Built for malls like yours. Let's connect.</h2>
+          <h2>Built for businesses like yours. Let's connect</h2>
           <div class="form-steps">
             <div class="form-step">
               <span class="form-step-num">1</span>
@@ -330,7 +331,7 @@
               <span class="form-step-num">2</span>
               <div>
                 <p class="form-step-title">Speak to an expert</p>
-                <p class="form-step-sub">A member of our team will get in touch with you</p>
+                <p class="form-step-sub">A member of our sales team will get in touch with you</p>
               </div>
             </div>
           </div>
@@ -362,10 +363,22 @@
             <input type="text" id="company" name="company" placeholder="Your mall or company" required />
           </div>
           <div class="form-field">
-            <label for="message">Tell us about your mall</label>
+            <label for="product">Product interested</label>
+            <select id="product" name="product">
+              <option value="" disabled selected>Select one...</option>
+              <option value="mall-commerce">Mall Commerce</option>
+              <option value="storefront">Storefront</option>
+              <option value="supply-chain">Supply chain solutions</option>
+              <option value="retail-store">Retail store solutions</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Tell us about your business or query <span class="optional">(optional)</span></label>
             <textarea id="message" name="message" rows="3" placeholder="Number of tenants, cities, what you're looking for..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary form-submit">Book a demo</button>
+          <button type="submit" class="btn btn-primary form-submit">Submit</button>
+          <p class="form-consent">By submitting, you agree to our Terms of Service and Privacy Policy.</p>
         </form>
       </div>
     </div>
